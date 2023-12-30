@@ -7,6 +7,8 @@ import Banner from "./components/Banner";
 import PopularBrand from "./components/PopularBrand";
 import PopularProducts from "./components/PopularProducts";
 import Footer from "./components/Footer";
+// import About from "./pages/About";
+// import Companies from "./pages/Companies";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <main>
         <PopularBrand />
         <PopularProducts />
+        {/* <About /> */}
+        {/* <Companies /> */}
       </main>
       <footer>
         <Footer />
