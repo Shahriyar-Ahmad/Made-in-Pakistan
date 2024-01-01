@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { brandsSlice } from "../features/brands/brandSlice";
+import brandsReducer from "../features/brands/brandSlice"; 
 
-export  const store = configureStore({
-    reducer: brandsSlice,
+export const store = configureStore({
+    reducer: {
+        companiesdata: brandsReducer, 
+    },
 });
-

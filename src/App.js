@@ -8,7 +8,7 @@ import PopularBrand from "./components/PopularBrand";
 import PopularProducts from "./components/PopularProducts";
 import Footer from "./components/Footer";
 // import About from "./pages/About";
-// import Companies from "./pages/Companies";
+import Brands from "./pages/Brands";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <PopularBrand />
         <PopularProducts />
         {/* <About /> */}
-        {/* <Companies /> */}
+        <Brands />
       </main>
       <footer>
         <Footer />

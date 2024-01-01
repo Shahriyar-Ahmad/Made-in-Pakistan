@@ -1,18 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const Companies = () => {
-  const brands = useSelector((state) => state.brands.brands);
+const Brands = () => {
+  const brands = useSelector((state) => state.companiesdata.brands);
   console.log(brands);
   const AllBrands = brands.map((brand, i) => (
     <div key={i} className="card w-64 h-64 flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
       <img
-        src={brand.img_src}
+        src={brand.brand_logo}
         alt="logo"
         className="w-[100px] h-[100px] rounded-full"
       />
       <h3 className="text-green-600 font-bold text-xl mt-1">{brand.name}</h3>
-      <b>{brand.categery}</b>
+      <b>{brand.category}</b>
       <button className="py-1 px-4 mt-2 text-white font-semibold bg-green-500 rounded-md font-sans cursor-pointer ease-in hover:bg-green-600">
         View
       </button>
@@ -32,4 +32,4 @@ const Companies = () => {
   );
 }
 
-export default Companies;
+export default Brands;

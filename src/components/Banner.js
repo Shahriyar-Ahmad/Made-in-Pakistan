@@ -31,29 +31,29 @@ const Banner = () => {
       </div>
       <div className="grid grid-cols-3">
         <div className="my-10 w-32 justify-center items-center">
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={Gourmet} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={National} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
         </div>
         <div className="w-32 justify-center items-center">
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={HBL} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={Khaadi} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={PEL} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
         </div>
         <div className="my-10 w-32 items-center justify-center">
-          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2 rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={System} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
-          <div className="cursor-pointer h-20 bg-white m-2 border-2  rounded-lg opacity-75 hover:scale-110  hover:opacity-100 hover:shadow-md">
+          <div className="cursor-pointer h-20 bg-white m-2 border-2  rounded-lg opacity-90 hover:scale-110  hover:opacity-100 hover:shadow-md">
             <img src={Stylo} alt="stylo" className="w-full h-full rounded-lg" />
           </div>
         </div>
