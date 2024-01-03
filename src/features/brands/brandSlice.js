@@ -215,6 +215,32 @@ const initialState = {
       ],
     },
     {
+      id: "2443",
+      name: "FrieslandCampina Engro Pakistan Limited",
+      category: "Groceries",
+      description:"FrieslandCampina Engro Pakistan Limited is a joint venture between FrieslandCampina and Engro Corporation, operating in the dairy industry in Pakistan. The company is involved in milk collection, processing, and the distribution of various dairy products, including milk and yogurt. For the latest information, it's advisable to refer to official sources or the company's website.",
+      brand_logo: National,
+      website_url: "www.engro.com/frieslandcampina/",
+      founder: "FrieslandCampina Engro Pakistan ",
+      products: [
+        {
+          p_name: "Olper's",
+          p_category: "Groceries",
+          p_img: National,
+        },
+        {
+            p_name: "Omoré",
+            p_category: "Groceries",
+            p_img: National,
+          },
+          {
+            p_name: "Tarang",
+            p_category: "Groceries",
+            p_img: National,
+          },
+      ],
+    },
+    {
       id: "2409",
       name: "Dalda Food Limited",
       category: "Groceries",
@@ -267,7 +293,7 @@ const initialState = {
       category: "Food & Beverage",
       description:"Pakola is a popular brand in the beverage industry, offering a range of flavored carbonated drinks.",
       brand_logo: National,
-      website_url: "",
+      website_url: "www.pakola.com.pk",
       founder: "Bashir Ahmed Sheikh",
       products: [
         {
@@ -312,7 +338,7 @@ const initialState = {
             p_img: National,
           },
           {
-            p_name: "Fresh up Buble",
+            p_name: "Fresh up Bubble",
             p_category: "Food & Beverage",
             p_img: National,
           },
@@ -348,10 +374,10 @@ const initialState = {
       id: "2414",
       name: "Volka Foods",
       category: "Foods and Beverages",
-      description:"Volka Food company is puplor food company.",
+      description:"Volka Food company is popular food company owner of boom booms bubble parent company.",
       brand_logo: National,
       website_url: "www.volkafood.com",
-      founder: "Saim Zulfiqar",
+      founder: "Saim Zulfiqar (CEO)",
       products: [
         {
           p_name: "Boom Boom",
@@ -804,7 +830,7 @@ const initialState = {
     },
     {
       id: "2432",
-      name: "Qarshi Industries",
+      name: "Hamdard Pakistan",
       category: "Medications and Health Products",
       description:"Hamdard Pakistan is a renowned brand specializing in natural and herbal medicines, dietary supplements, and health and wellness products.",
       brand_logo: National,
@@ -822,7 +848,7 @@ const initialState = {
             p_img: National,
           },
           {
-            p_name: "Sualin:",
+            p_name: "Sualin",
             p_category: "Medications and Health Products",
             p_img: National,
           },
@@ -913,7 +939,7 @@ const initialState = {
       description:"Getz Pharmaceutical Company Ltd specializes in pharmaceuticals and healthcare products, providing a wide range of medications for various therapeutic areas.",
       brand_logo: National,
       website_url: "www.getzpharma.com",
-      founder: "",
+      founder: "Khalid Mahmood (CEO)",
       products: [
         {
           p_name: "Ciplox",
@@ -939,7 +965,7 @@ const initialState = {
       description:"Ferozsons Laboratories Limited is a pharmaceutical company offering a wide range of medicines, healthcare products, and medical devices.",
       brand_logo: National,
       website_url: "www.ferozsons-labs.com",
-      founder: "",
+      founder: "Osman Khalid Waheed (CEO)",
       products: [
         {
           p_name: "Calnic",

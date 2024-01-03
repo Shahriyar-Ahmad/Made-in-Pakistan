@@ -1,33 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Brands = () => {
   const brands = useSelector((state) => state.companiesdata.brands);
-  console.log(brands);
-  const AllBrands = brands.map((brand, i) => (
-    <div key={i} className="card w-64 h-64 flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
-      <img
-        src={brand.brand_logo}
-        alt="logo"
-        className="w-[100px] h-[100px] rounded-full"
-      />
-      <h3 className="text-green-600 font-bold text-xl mt-1">{brand.name}</h3>
-      <b>{brand.category}</b>
-      <button className="py-1 px-4 mt-2 text-white font-semibold bg-green-500 rounded-md font-sans cursor-pointer ease-in hover:bg-green-600">
-        View
-      </button>
-    </div>
-  ))
+  const [activeCategory, setActiveCategory] = useState('all');
+
+  // Filter brands based on the category
+  const filteredBrands = activeCategory === 'all'
+    ? brands
+    : brands.filter((brand) => brand.category === activeCategory).sort((a, b) => a.name.localeCompare(b.name));
+
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+  };
+
   return (
     <div className='popular-brand-product py-10 px-16 mb-2 justify-center items-center'>
-      <h2 className='text-3xl font-bold w-96 m-auto border-2 px-1 py-2 rounded-md bg-green-600 text-white stroke-green-600'>All Brands</h2>
-      {/* <div className='h-1.5 w-52 m-auto mt-4 bg-green-500 rounded-md text-center'></div> */}
-      <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
-        {AllBrands}
+      <div className="nav-links flex gap-4 p-5 my-5 justify-center items-center list-none">
+        <button
+          onClick={() => handleCategoryClick('all')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'all' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          All
+        </button>
+        <button
+          onClick={() => handleCategoryClick('Groceries')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Groceries' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Groceries
+        </button>
+        <button
+          onClick={() => handleCategoryClick('Food & Beverage')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Food & Beverage' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Food & Beverage
+        </button>
+        <button
+          onClick={() => handleCategoryClick('Personal Care')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Personal Care' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Personal Care
+        </button>
+        <button
+          onClick={() => handleCategoryClick('Clothing and Apparel')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Clothing and Apparel' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Clothing and Apparel
+        </button>
+        <button
+          onClick={() => handleCategoryClick('Medications and Health Products')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Medications and Health Products' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Medications and Health Products
+        </button>
       </div>
-      <button className="py-2 px-4 mt-10 text-white font-semibold bg-green-500 rounded-md font-sans cursor-pointer ease-in hover:bg-green-600">
-        View More
-      </button>
+      <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
+        {filteredBrands.map((brand) => (
+          <div key={brand.id} className="card w-64 h-64 flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
+            <img
+              src={brand.brand_logo}
+              alt="logo"
+              className="w-[100px] h-[100px] rounded-full"
+            />
+            <h3 className="text-green-600 font-bold text-xl mt-1">{brand.name}</h3>
+            <b>{brand.category}</b>
+            <p className="py-1 px-4 mt-2 text-white font-semibold bg-green-500 rounded-md font-sans cursor-pointer ease-in hover:bg-green-600">
+              <Link to={`/brand/${brand.id}`}> View </Link>
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

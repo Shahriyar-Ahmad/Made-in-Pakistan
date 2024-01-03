@@ -6,7 +6,7 @@ const About = () => {
       <h1 className="text-3xl font-bold w-96 m-auto border-2 px-1 py-2 rounded-md bg-green-600 text-white stroke-green-600">
         About
       </h1>
-      <p className="my-2 mt-5 text-md text-semibold font-mono">
+      <p className="my-2 mt-5 text-md text-semibold font-mono text-left">
         <b className="text-green-600">Asslam-o-Aliakum Guys!</b> This is
         MadeinPakistan.pk, here we list all those companies and their popular
         product which belong to Pakistan. Its means here you will find your own
@@ -15,7 +15,7 @@ const About = () => {
         Pakistan. Might be chance some companies are miss in this version, but
         we will try to add all of those in our upcoming version.
       </p>
-      <p className="my-2 text-semibold text-md font-mono">
+      <p className="my-2 text-semibold text-md font-mono text-left">
         <b className="text-green-600">Purpose: </b> The primary purpose of
         building this site is enhance peoples understanding about their
         home-made companies and their products as well as support to Pakistani
@@ -24,13 +24,13 @@ const About = () => {
         founders, so they do more innovations and made products which compete on
         world level.
       </p>
-      <p className="my-2 text-semibold text-md font-mono">
+      <p className="my-2 text-semibold text-md font-mono text-left">
         <b className="text-green-600">Listing Factor :</b> On this site we list
         companies on the based of 3 factor. First is company ownership or stock
         mostly owned by Pakistanis, Second is company mainly oprating in
         Pakistan,third and last factor is company extablished by Pakistani.
       </p>
-      <p className="my-2 text-semibold text-md font-mono">
+      <p className="my-2 text-semibold text-md font-mono text-left">
         <b className="text-green-600">Note :</b> If you a company owner or know
         a companies which doing amazing job. Then feel free to DM Shahriyar
         Ahmad on LinkdIn. I will try to add that company after review in

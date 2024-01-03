@@ -3,26 +3,30 @@ import "./App.css";
 
 // Components Import
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import PopularBrand from "./components/PopularBrand";
-import PopularProducts from "./components/PopularProducts";
 import Footer from "./components/Footer";
-// import About from "./pages/About";
+
+// Pages Import
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Brands from "./pages/Brands";
+import BrandINFO from "./pages/BrandINFO";
+
+// Router Import
+import { Route , Routes } from "react-router";
+
 
 function App() {
   return (
     <div className="App">
       <header>
         <Navbar />
-        <Banner />
       </header>
-      <main>
-        <PopularBrand />
-        <PopularProducts />
-        {/* <About /> */}
-        <Brands />
-      </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/brands" element={<Brands />} />
+          <Route path="/brand/:id" element={<BrandINFO />} />
+        </Routes>
       <footer>
         <Footer />
       </footer>
