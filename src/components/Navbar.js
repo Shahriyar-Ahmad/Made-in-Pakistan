@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
   return (
-    <div className="shadow-sm justify-center items-center">
+    <div className="shadow-md justify-center items-center">
       <h1 className="text-center mt-3 font-extrabold text-4xl text-green-600 justify-center ">
         Made in Pakistan
       </h1>

@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,16 +26,16 @@ const Footer = () => {
       </div>
       <div className="links flex gap-4 text-center justify-center items-center mt-2">
         <p className="font-semibold text-lg ease-in hover:text-green-600 hover:cursor-pointer">
-          Brands
+          <Link to={"/"}>Home</Link>
         </p>
         <p className="font-semibold text-lg ease-in hover:text-green-600 hover:cursor-pointer">
-          Products
+        <Link to={"/brands"}>Brands</Link>
         </p>
         <p className="font-semibold text-lg ease-in hover:text-green-600 hover:cursor-pointer">
-          About
+        <Link to={"/about"}>About</Link>
         </p>
       </div>
-      <div className="bg-black w-96 m-auto mt-2 opacity-5 h-1"></div>
+      <div className="bg-black w-96 m-auto mt-2 opacity-10 h-[0.8px]"></div>
       <p className="font-semibold mt-2 text-lg text-green-600 hover:cursor-pointer">
         Made With Love By Shahriyar Ahmad.
       </p>

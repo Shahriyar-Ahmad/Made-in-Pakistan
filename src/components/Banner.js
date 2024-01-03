@@ -10,7 +10,7 @@ import System from "../images/system ltd.jpg";
 
 const Banner = () => {
   return (
-    <div className="banner text-left flex justify-between gap-4 bg-green-100 p-16 mb-2">
+    <div className="banner text-left flex justify-between gap-4 bg-green-200 p-16 mb-2">
       <div className="banner-text">
         <p className="font-bold text-green-600 text-2xl">Lets Promise</p>
         <h2 className="text-4xl leading-normal font-bold font-sans">

@@ -43,6 +43,12 @@ const Brands = () => {
           Personal Care
         </button>
         <button
+          onClick={() => handleCategoryClick('Electronics & Home appliances')}
+          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Electronics & Home appliances' ? 'bg-green-700' : 'bg-green-600'}`}
+        >
+          Electronics
+        </button>
+        <button
           onClick={() => handleCategoryClick('Clothing and Apparel')}
           className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Clothing and Apparel' ? 'bg-green-700' : 'bg-green-600'}`}
         >
@@ -52,12 +58,12 @@ const Brands = () => {
           onClick={() => handleCategoryClick('Medications and Health Products')}
           className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Medications and Health Products' ? 'bg-green-700' : 'bg-green-600'}`}
         >
-          Medications and Health Products
+         Health Products
         </button>
       </div>
       <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
         {filteredBrands.map((brand) => (
-          <div key={brand.id} className="card w-64 h-64 flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
+          <div key={brand.id} className="card w-64 h-[270px] flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
             <img
               src={brand.brand_logo}
               alt="logo"

@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container p-16">
-      <h1 className="text-3xl font-bold w-96 m-auto border-2 px-1 py-2 rounded-md bg-green-600 text-white stroke-green-600">
+    <div className="container p-5 sm:p-5 md:p-16">
+      <h1 className=" sm:text-xl md:text-3xl sm:w-24 md:w-64 font-bold m-auto shadow-xl px-4 py-2 rounded-md bg-green-600 text-white stroke-green-600">
         About
       </h1>
       <p className="my-2 mt-5 text-md text-semibold font-mono text-left">
@@ -36,7 +36,7 @@ const About = () => {
         Ahmad on LinkdIn. I will try to add that company after review in
         upcoming version of this site. Thanks
       </p>
-      <div className="w-[400px] h-[125px] text-lg font-serif justify-center items-center rounded-md shadow-lg mt-4 m-auto  p-4 bg-green-500 text-white text-wrap cursor-pointer">
+      <div className="w-[400px] h-[125px] text-lg font-serif justify-center items-center rounded-md shadow-xl mt-4 m-auto  p-4 bg-green-500 text-white text-wrap cursor-pointer">
         <p className="text-semibold">
           " I believe this my small effort bring <br /> an big impact "
         </p>
@@ -45,23 +45,23 @@ const About = () => {
         </b>
       </div>
       <div className="tablebox mt-4 m-auto text-lg">
-        <table className="table-auto bg-green-600 text-white text-bold w-[500px] h-[200px] border-2 p-4 m-auto rounded-lg">
-          <tbody className="text-left">
+        <table className="table-auto bg-green-500 text-white text-bold w-[500px] h-[200px] p-4 m-auto rounded-lg">
+          <tbody className="text-left p-2">
             <tr className="table-row border-2 p-4">
-              <td>Founder</td>
-              <td>Shahriyar Ahmad</td>
+              <td className="py-2 px-4 border-b">Founder</td>
+              <td className="py-2 px-4 border-b">Shahriyar Ahmad</td>
             </tr>
             <tr className="table-row border-2">
-              <td>Founded</td>
-              <td>1st Jan, 2024</td>
+              <td className="py-2 px-4 border-b">Founded</td>
+              <td className="py-2 px-4 border-b">1st Jan, 2024</td>
             </tr>
             <tr className="table-row border-2 p-2">
-              <td>Tech Stack</td>
-              <td>React, React Redux, Tailwindcss</td>
+              <td className="py-2 px-4 border-b">Tech Stack</td>
+              <td className="py-2 px-4 border-b">React, React Redux, Tailwindcss</td>
             </tr>
             <tr className="table-row border-2 p-2">
-              <td>Source Code</td>
-              <td>Github Repo</td>
+              <td className="py-2 px-4 border-b">Source Code</td>
+              <td className="py-2 px-4 border-b">Github Repo</td>
             </tr>
           </tbody>
         </table>
