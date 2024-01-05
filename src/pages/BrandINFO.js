@@ -16,8 +16,8 @@ const BrandINFO = () => {
             alt="logo"
             className="w-[100px] h-[100px] rounded-full m-auto border-2 border-green-600"
           />
-          <h1 className='my-2 text-center font-sans font-extrabold text-green-600 sm:text-lg text-5xl '>{brandinfo.name}</h1>
-          <div className=' sm:flex sm:flex-col md:flex justify-center items-center my-2 gap-4 sm:gap-2'>
+          <h1 className='my-2 text-center font-sans font-extrabold text-green-600 min-[200px]:text-2xl sm:text-3xl'>{brandinfo.name}</h1>
+          <div className='flex min-[200px]:flex-col md:flex-row justify-center items-center my-2 gap-4 sm:gap-2'>
             <div className='mx-4'>
               <b>Category : </b>
               <b className='text-green-600 font-sans'>{brandinfo.category}</b>
@@ -32,12 +32,12 @@ const BrandINFO = () => {
             </div>
           </div>
           <div className="bg-black w-full m-auto my-2 opacity-10 h-[0.6px]"></div>
-          <h2 className="text-2xl font-bold my-4 m-auto shadow-lg px-10 py-2 rounded-md bg-green-600 text-white stroke-green-600">
+          <h2 className='min-[200px]:text-lg sm:text-2xl md:text-3xl mt-4 font-bold min-[200px]:w-60 md:w-96 m-auto shadow-lg px-1 py-3 rounded-md bg-green-600 text-white stroke-green-600'>
             About Company
           </h2>
           <p className="my-2 mt-5 text-md font-mono text-left">{brandinfo.description}</p>
           <div className="bg-black w-full m-auto my-2 opacity-10 h-[0.6px]"></div>
-          <h2 className="text-2xl font-bold my-4 m-auto shadow-lg px-10 py-2 rounded-md bg-green-600 text-white stroke-green-600">
+          <h2 className='min-[200px]:text-lg sm:text-2xl md:text-3xl font-bold min-[200px]:w-60 md:w-96 m-auto shadow-lg px-1 py-3 mt-4 rounded-md bg-green-600 text-white stroke-green-600'>
             Popular Products
           </h2>
           <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>

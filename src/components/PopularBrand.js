@@ -17,7 +17,7 @@ const PopularBrand = () => {
   ))
   return (
     <div className='popular-brand-product py-10 px-16 mb-2 justify-center items-center'>
-      <h2 className='text-3xl font-bold w-96 m-auto shadow-lg px-1 py-2 rounded-md bg-green-600 text-white stroke-green-100'>Some Popular Brands</h2>
+      <h2 className='min-[200px]:text-lg sm:text-2xl md:text-3xl font-bold min-[200px]:w-60 md:w-96 m-auto shadow-lg px-1 py-3 rounded-md bg-green-600 text-white stroke-green-600'>Some Popular Brands</h2>
       {/* <div className='h-1.5 w-52 m-auto mt-4 bg-green-500 rounded-md text-center'></div> */}
       <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
         {PopularBrand}

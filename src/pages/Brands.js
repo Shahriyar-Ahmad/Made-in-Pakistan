@@ -16,47 +16,47 @@ const Brands = () => {
   };
 
   return (
-    <div className='popular-brand-product py-10 px-16 mb-2 justify-center items-center'>
-      <div className="nav-links flex gap-4 p-5 my-5 justify-center items-center list-none">
+    <div className='popular-brand-product py-10 px-16 mb-2 min-[200px]:justify-self-start md:justify-center items-center'>
+      <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center">
         <button
           onClick={() => handleCategoryClick('all')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'all' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'all' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           All
         </button>
         <button
           onClick={() => handleCategoryClick('Groceries')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Groceries' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Groceries' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           Groceries
         </button>
         <button
           onClick={() => handleCategoryClick('Food & Beverage')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Food & Beverage' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Food & Beverage' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           Food & Beverage
         </button>
         <button
           onClick={() => handleCategoryClick('Personal Care')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Personal Care' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Personal Care' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           Personal Care
         </button>
         <button
           onClick={() => handleCategoryClick('Electronics & Home appliances')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Electronics & Home appliances' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Electronics & Home appliances' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           Electronics
         </button>
         <button
           onClick={() => handleCategoryClick('Clothing and Apparel')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Clothing and Apparel' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Clothing and Apparel' ? 'bg-green-700' : 'bg-green-600'}`}
         >
           Clothing and Apparel
         </button>
         <button
           onClick={() => handleCategoryClick('Medications and Health Products')}
-          className={`py-1 px-2 text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Medications and Health Products' ? 'bg-green-700' : 'bg-green-600'}`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Medications and Health Products' ? 'bg-green-700' : 'bg-green-600'}`}
         >
          Health Products
         </button>

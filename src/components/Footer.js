@@ -35,7 +35,7 @@ const Footer = () => {
         <Link to={"/about"}>About</Link>
         </p>
       </div>
-      <div className="bg-black w-96 m-auto mt-2 opacity-10 h-[0.8px]"></div>
+      <div className="bg-black min-[200px]:w-[60%] w-[30%] m-auto mt-2 opacity-10 h-[0.8px]"></div>
       <p className="font-semibold mt-2 text-lg text-green-600 hover:cursor-pointer">
         Made With Love By Shahriyar Ahmad.
       </p>
