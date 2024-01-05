@@ -28,7 +28,7 @@ const BrandINFO = () => {
             </div>
             <div className='mx-4'>
               <b>Website : </b>
-              <b className='text-green-600 text-extrabold font-sans'>{brandinfo.website_url}</b>
+              <b  className='text-green-600 text-extrabold font-sans'>{brandinfo.website_url}</b>
             </div>
           </div>
           <div className="bg-black w-full m-auto my-2 opacity-10 h-[0.6px]"></div>
