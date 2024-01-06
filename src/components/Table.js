@@ -4,7 +4,7 @@ const Table = () => {
 
   return (
     <div className="container my-8 mx-auto">
-      <h2 className='min-[200px]:text-lg md:text-3xl mb-4 font-bold min-[200px]:w-60 md:w-96 m-auto shadow-lg px-1 py-3 rounded-md bg-green-600 text-white stroke-green-600'>Some Infomation</h2>
+      <h2 className='min-[200px]:text-lg md:text-3xl mb-4 text-center font-bold min-[200px]:w-60 md:w-96 m-auto shadow-lg px-1 py-3 rounded-md bg-green-600 text-white stroke-green-600'>Some Infomation</h2>
       <table className="w-[80%] m-auto bg-white border border-gray-300 text-left">
         <thead className='bg-green-600 text-white'>
           <tr>

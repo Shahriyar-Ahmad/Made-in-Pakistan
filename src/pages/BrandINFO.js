@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import National from '../images/hbl bank.png';
 import { useSelector } from 'react-redux';
 
 const BrandINFO = () => {
@@ -17,7 +16,7 @@ const BrandINFO = () => {
             className="w-[100px] h-[100px] rounded-full m-auto border-2 border-green-600"
           />
           <h1 className='my-2 text-center font-sans font-extrabold text-green-600 min-[200px]:text-2xl sm:text-3xl'>{brandinfo.name}</h1>
-          <div className='flex min-[200px]:flex-col md:flex-row justify-center items-center my-2 gap-4 sm:gap-2'>
+          <div className='flex min-[200px]:flex-col md:flex-row justify-center items-center my-2 sm:gap-2 md:gap-4'>
             <div className='mx-4'>
               <b>Category : </b>
               <b className='text-green-600 font-sans'>{brandinfo.category}</b>

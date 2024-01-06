@@ -1,12 +1,12 @@
 import React from "react";
 
-import Stylo from "../images/stylo.png";
-import Gourmet from "../images/goumet foods.png";
-import HBL from "../images/hbl bank.png";
-import Khaadi from "../images/khaadi.png";
-import National from "../images/national foods.png";
-import PEL from "../images/martin dow.jpg";
-import System from "../images/system ltd.jpg";
+import Stylo from "../all images/Else Pics/stylo.png";
+import Gourmet from "../all images/Gourmet Foods/Logo.png";
+import HBL from "../all images/Else Pics/hbl bank.png";
+import Khaadi from "../all images/Khaadi/Logo.png";
+import National from "../all images/National Foods/Logo.jpg";
+import PEL from "../all images/Pak Elektron Limited (PEL)/Logo.png";
+import System from "../all images/Else Pics/system ltd.jpg";
 
 const Banner = () => {
   return (

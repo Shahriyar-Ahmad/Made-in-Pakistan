@@ -1,6 +1,3 @@
-// Style Import
-import "./App.css";
-
 // Components Import
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

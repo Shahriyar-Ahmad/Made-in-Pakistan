@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // Images Import
 // No Images logo Import
-import NoImage from "../../all images/Pak Elektron Limited (PEL)/No image.png";
+import NoImage from "../../all images/Else Pics/No image.png";
 // National Img Import
 import National from "../../all images/National Foods/Logo.jpg";
 import NationalMasalay from "../../all images/National Foods/National Masalay.jpg";

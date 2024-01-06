@@ -17,7 +17,7 @@ const Brands = () => {
 
   return (
     <div className='popular-brand-product py-10 px-16 mb-2 min-[200px]:justify-self-start md:justify-center items-center'>
-      <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center">
+      <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center m-auto text-center">
         <button
           onClick={() => handleCategoryClick('all')}
           className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'all' ? 'bg-green-700' : 'bg-green-600'}`}
@@ -69,8 +69,8 @@ const Brands = () => {
               alt="logo"
               className="w-[100px] h-[100px] rounded-full"
             />
-            <h3 className="text-green-600 font-bold text-xl mt-1">{brand.name}</h3>
-            <b>{brand.category}</b>
+            <h3 className="text-green-600 font-bold text-xl mt-1 text-center">{brand.name}</h3>
+            <b className='text-center'>{brand.category}</b>
             <p className="py-1 px-4 mt-2 text-white font-semibold bg-green-500 rounded-md font-sans cursor-pointer ease-in hover:bg-green-600">
               <Link to={`/brand/${brand.id}`}> View </Link>
             </p>
