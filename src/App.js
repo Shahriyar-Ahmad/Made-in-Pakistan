@@ -7,9 +7,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Brands from "./pages/Brands";
 import BrandINFO from "./pages/BrandINFO";
+import Search from "./pages/Search";
 
 // Router Import
 import { Route , Routes } from "react-router";
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/brands" element={<Brands />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/brand/:id" element={<BrandINFO />} />
         </Routes>
       <footer>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { IoIosSearch } from "react-icons/io";
 
 const Brands = () => {
   const brands = useSelector((state) => state.companiesdata.brands);
@@ -48,8 +49,8 @@ const moveToNext = () => {
   const currentPageProduct = filteredBrands.slice(firstIndex, lastIndex);
 
   return (
-    <div className='popular-brand-product py-10 px-16 mb-2 min-[200px]:justify-self-start md:justify-center items-center'>
-      <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center m-auto text-center">
+    <div className='py-10 px-16 mb-2 min-[200px]:justify-self-start md:justify-center items-center'>
+      <div className="flex flex-wrap gap-1 md:p-5 my-5 md:justify-center items-center m-auto text-center">
         <button
           onClick={() => handleCategoryClick('all')}
           className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'all' ? 'bg-green-700' : 'bg-green-600'}`}
@@ -92,6 +93,8 @@ const moveToNext = () => {
         >
           Health Products
         </button>
+        <div className='opacity-50'>|</div>
+        <div><Link to={"/search"}><IoIosSearch className='text-xl text-green-600 font-semibold' /></Link></div>
       </div>
       <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
         {currentPageProduct.map((brand) => (
@@ -100,6 +103,7 @@ const moveToNext = () => {
               src={brand.brand_logo}
               alt="logo"
               className="w-[100px] h-[100px] rounded-full"
+              autofocus
             />
             <h3 className="text-green-600 font-bold text-xl mt-1 text-center">{brand.name}</h3>
             <b className='text-center'>{brand.category}</b>
