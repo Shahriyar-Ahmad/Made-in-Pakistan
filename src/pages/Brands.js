@@ -4,16 +4,48 @@ import { Link } from 'react-router-dom';
 
 const Brands = () => {
   const brands = useSelector((state) => state.companiesdata.brands);
-  const [activeCategory, setActiveCategory] = useState('all');
 
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+  const lastIndex = itemsPerPage * currentPage;
+  const firstIndex = lastIndex - itemsPerPage;
+
+  const paginate = (index) => {
+    setCurrentPage(index + 1)
+  }
+
+  const moveToPrev = () => {
+    if (currentPage === 1) {
+        setCurrentPage(totalPages)
+    }
+    else {
+        setCurrentPage(currentPage - 1)
+    }
+}
+const moveToNext = () => {
+
+    if (currentPage === totalPages) {
+        setCurrentPage(1)
+    }
+    else {
+        setCurrentPage(currentPage + 1)
+    }
+
+}
   // Filter brands based on the category
+  const [activeCategory, setActiveCategory] = useState('all');
   const filteredBrands = activeCategory === 'all'
     ? brands
     : brands.filter((brand) => brand.category === activeCategory).sort((a, b) => a.name.localeCompare(b.name));
 
+
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
+    setCurrentPage(1);
   };
+  const totalPages = Math.ceil(filteredBrands.length / itemsPerPage);
+  const currentPageProduct = filteredBrands.slice(firstIndex, lastIndex);
 
   return (
     <div className='popular-brand-product py-10 px-16 mb-2 min-[200px]:justify-self-start md:justify-center items-center'>
@@ -58,11 +90,11 @@ const Brands = () => {
           onClick={() => handleCategoryClick('Medications and Health Products')}
           className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in ${activeCategory === 'Medications and Health Products' ? 'bg-green-700' : 'bg-green-600'}`}
         >
-         Health Products
+          Health Products
         </button>
       </div>
       <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
-        {filteredBrands.map((brand) => (
+        {currentPageProduct.map((brand) => (
           <div key={brand.id} className="card w-64 h-[270px] flex flex-col justify-center items-center bg-white border-2 p-4 rounded-md hover:shadow-md hover:cursor-pointer">
             <img
               src={brand.brand_logo}
@@ -76,6 +108,31 @@ const Brands = () => {
             </p>
           </div>
         ))}
+      </div>
+      <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center m-auto text-center">
+        <button
+          onClick={moveToPrev}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in bg-green-600`}
+        >
+        Prev
+        </button>
+        {
+            Array.from({ length: totalPages }).map((_, index) => (
+                <button
+                    key={index}
+                    onClick={() => paginate(index)}
+                    className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-lg font-sans cursor-pointer ${currentPage === index + 1 ? 'bg-green-700' : 'bg-green-600'}`}
+                >
+                    {index + 1}
+                </button>
+            ))
+        }
+        <button
+          onClick={moveToNext}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in bg-green-600`}
+        >
+        Next
+        </button>
       </div>
     </div>
   );

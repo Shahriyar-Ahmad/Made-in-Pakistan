@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link to={"brands"} onClick={()=> setActiveLink("brands")} >Brands</Link>
         </li>
         <li className={`py-1 px-2 text-white min-[200px]:text-[.8rem] md:text-lg font-semibold rounded-md lead md:leading-6 font-sans cursor-pointer ease-in hover:bg-green-700 ${activeLink === 'about' ? 'bg-green-700' : 'bg-green-600'}`}>
-        <Link to={"about"} onClick={()=> setActiveLink("about")} >About</Link>
+        <Link to={"about"} onClick={()=> setActiveLink("about")}>About</Link>
         </li>
       </div>
     </div>
