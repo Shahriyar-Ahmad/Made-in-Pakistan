@@ -94,7 +94,11 @@ const moveToNext = () => {
           Health Products
         </button>
         <div className='opacity-50'>|</div>
-        <div><Link to={"/search"}><IoIosSearch className='text-xl text-green-600 font-semibold' /></Link></div>
+        <div>
+          <span title='Search Company'>
+             <Link to={"/search"}><IoIosSearch className='text-xl text-green-600 font-bold' /></Link>
+          </span>
+       </div>
       </div>
       <div className='flex justify-center items-center gap-4 flex-wrap mt-8'>
         {currentPageProduct.map((brand) => (
@@ -116,7 +120,7 @@ const moveToNext = () => {
       <div className="nav-links flex-wrap gap-4  md:p-5 my-5 md:justify-center items-center m-auto text-center">
         <button
           onClick={moveToPrev}
-          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in bg-green-600`}
+          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-sm text-white font-semibold rounded-md font-sans cursor-pointer bg-green-600`}
         >
         Prev
         </button>
@@ -125,7 +129,7 @@ const moveToNext = () => {
                 <button
                     key={index}
                     onClick={() => paginate(index)}
-                    className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-lg font-sans cursor-pointer ${currentPage === index + 1 ? 'bg-green-700' : 'bg-green-600'}`}
+                    className={`py-1 px-2 min-[200px]:m-[1px] min-[200px]:text-sm text-white font-semibold rounded-lg font-sans cursor-pointer ${currentPage === index + 1 ? 'bg-green-700' : 'bg-green-600'}`}
                 >
                     {index + 1}
                 </button>
@@ -133,7 +137,7 @@ const moveToNext = () => {
         }
         <button
           onClick={moveToNext}
-          className={`py-1 px-2 min-[200px]:m-1 min-[200px]:text-md text-white font-semibold rounded-md font-sans cursor-pointer ease-in bg-green-600`}
+          className={`py-1 px-2 min-[200px]:m-1  min-[200px]:text-sm text-white font-semibold rounded-md font-sans cursor-pointer ease-in bg-green-600`}
         >
         Next
         </button>
